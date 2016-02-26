@@ -1,0 +1,124 @@
+body{
+	background:#2F304E url("../img/hokkaido-bg.png") no-repeat center center fixed;
+	overflow:hidden;
+}
+
+footer {
+    position: fixed;
+    height: 70px;
+    bottom: 0;
+    width: 100%;
+}
+
+.circle-box{
+	width:50%;
+	float:left;
+	margin-bottom:10px;
+}
+
+
+.circles{
+	position: relative;
+	width:90%;
+	height:90%;
+	border-radius:50%;
+	
+	line-height:100px;
+	text-align:center;
+	margin: auto;
+	background:#fff; 
+	text-shadow:0 1px 0 #ddd;
+	text-align:center;
+	text-decoration:none;
+	box-shadow:1px 1px 2px #000;
+	background:#EEE4C3;
+	opacity:0.95
+}
+
+.circles span{
+	display: block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	font-size:50px;
+}
+
+.circles:hover{
+	background:#D13A43;
+	color: #fff;
+	text-shadow:0 1px 0 #333;
+}
+
+.circle{
+	width:600px;
+	height:600px;
+	border-radius:300px;
+	color:#000;
+	line-height:100px;
+	text-align:center;
+	background:#fff; 
+	text-shadow:0 1px 0 #666;
+	text-align:center;
+	text-decoration:none;
+	box-shadow:1px 1px 2px #000;
+	background:#EEE4C3;
+	opacity:0.95;
+}
+
+.circle span{
+	display: block;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	font-size:340px;
+	font-weight:bold
+}
+
+h1{
+	font-size: 93px;
+	color:white;
+	text-shadow:0 1px 0 #333;
+	font-weight: bold;
+}
+
+h2{
+	font-size: 73px;
+	color:white;
+	text-shadow:0 1px 0 #333;
+	font-weight: bold;
+}
+	
+.rounded{
+	border-radius: 20px;
+	background: #f8f8f8;
+	padding-top: 10px;
+	box-shadow:1px 1px 2px #2f304e;
+}
+
+.rounded br{
+	display:block;
+	height:2px;
+}
+
+.modal-bingo{
+	
+	text-align:center;
+	background-color:#fff;
+	
+}
+.modal-bingo img{
+	 
+	width:100%
+	
+}
+
+a.close-number{
+	color:#000
+}
+
+a:hover.close-number{
+	text-decoration:none;
+	color:white;
+}

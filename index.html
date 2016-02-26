@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Bingo Hokkaido</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.css" />
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<script src="js/jquery-1.12.0.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.transit.min.js"></script>
+		<script src="js/base.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container-fluid">
+				<div class="col-md-2 col-md-offset-1 text-center"><h1>B</h1></div>
+				<div class="col-md-2 text-center"><h1>I</h1></div>
+				<div class="col-md-2 text-center"><h1>N</h1></div>
+				<div class="col-md-2 text-center"><h1>G</h1></div>
+				<div class="col-md-2 text-center"><h1>O</h1></div>
+			</div>
+		</header>
+		<div class="container-fluid">
+			<div class="row" style="min-height:60%">
+				<div class="col-md-2 col-md-offset-1"><div class="rounded"><div id="b-col"></div><br style="clear:both;" /></div></div>
+				<div class="col-md-2"><div class="rounded"><div id="i-col"></div><br style="clear:both;" /></div></div>
+				<div class="col-md-2"><div class="rounded"><div id="n-col"></div><br style="clear:both;" /></div></div>
+				<div class="col-md-2"><div class="rounded"><div id="g-col"></div><br style="clear:both;" /></div></div>
+				<div class="col-md-2"><div class="rounded"><div id="o-col"></div><br style="clear:both;" /></div></div>
+			</div>
+			<div class="row text-center" style="text-align">
+				<h2 id="prize-container"></h2>
+			</div>
+		</div>
+		<footer>
+			<nav class="navbar navbar-inverse" style="height:70px">
+				<div class="container-fluid">
+					<form>
+					<ul class="nav navbar-nav">
+
+						<li style="width:130px"><input type="number" max="75" class="form-control input-sm" style="margin-top:8px" id="selected-number" placeholder="Digite o Número" /></li>
+						<li>-</li>
+						<li><button type="submit" class="btn btn-primary btn-sm" id="show-number" style="margin-top:8px"><span class="glyphicon glyphicon-plus-sign"></span> Anunciar Número</button></li> 
+						<li>-</li>
+						<li><button type="button" class="btn btn-warning btn-sm" id="show-bingo" style="margin-top:8px"><span class="glyphicon glyphicon-bullhorn"></span> Anunciar BINGO!</button></li> 
+						<li>-</li>
+						<li>
+							<div class="alert alert-danger" style="margin-top:8px; display:none">
+								<span class="fa fa-paw"></span> <strong>Atenção :</strong> <span id="danger-message"></span>
+							</div>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li style="width:65px"><input type="text" class="form-control input-sm" id="selected-serie" style="margin-top:8px" placeholder="Série" value="Série " maxlength="9" /></li>
+						<li>-</li>
+						<li><input type="text" class="form-control input-sm" id="selected-prize" style="margin-top:8px" placeholder="1º Prêmio" /></li>
+						<li>-</li>
+						<li style="margin-right:8px"><button type="button" class="btn btn-primary btn-sm" id="show-prize" style="margin-top:8px"><i class="glyphicon glyphicon-gift"></i> Mostrar prêmio</button></li> 
+					</ul>					
+				</div>
+				
+			</nav>
+		</footer>
+
+	</body>
+	
+	
+<!-- Modal -->
+<div id="show-number-dialog" class="modal fade" role="dialog">
+  <div class="modal-dialog circle animated infinite pulse" >
+	<span><u id="inner-number"></u></span>
+
+  </div>
+</div>
+
+<div id="show-bingo-dialog" class="modal fade" role="dialog">
+  <div class="modal-dialog animated infinite tada" >
+	<div class="modal-bingo">
+		<img src="img/bingo1.gif" />
+	</div>
+  </div>
+</div>
+	
+</html>
+
